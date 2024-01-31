@@ -1,0 +1,150 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87ceeb; /* Light blue background */
+}
+
+.box {
+    width: 20vw;
+    height: 60vh;
+    background-color: #040a2e;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+
+.wave {
+    position: absolute;
+    opacity: 0.9;
+    top: 140%;
+    
+    background :white;
+    width: 50rem;
+    height: 50rem;
+    margin-left:-25rem;
+    margin-top: -25rem;
+    transform-origin: 48%;
+    border-radius: 43%;
+    animation: rotate 3000ms infinite linear;
+    z-index: I;
+}
+
+
+.wave.-three {
+    animation: rotate 5000ms infinite linear;
+    z-index: 3 !important; 
+    opacity: 0.2;
+    left: 250%;
+    
+}
+
+.wave.-two {
+    animation: rotate 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.5;
+    left: 150%;
+}
+
+.wave.-one {
+    animation: rotate 5000ms infinite linear;
+    z-index: 1 !important;
+    opacity: 0.3;
+    left: 200%;
+
+}
+
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.weathercon {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #eccc68;
+    font-size: 100px;
+    z-index: 2;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+}
+
+.info {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.info h2 {
+    font-family: 'Diphylleia', serif;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.info p#date {
+    margin: 5px 0;
+}
+
+.info h1.temp {
+    font-size: 2.5em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.info h3.tempmin_max {
+    margin: 0;
+    color: gray;
+    font-weight: 800;
+}
+
+.fa-sun {
+    color: #eccc68; /* Adjust the color to match the image */
+}
+
+.fa-street-view {
+    margin-right: 5px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fa-street-view {
+    color: white;
+    animation: pulse 2s infinite ease-in-out;
+}
