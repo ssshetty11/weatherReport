@@ -23,12 +23,13 @@ body {
     height: 60vh;
     background-color: #040a2e;
     border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 30px black;
     overflow: hidden;
     position: relative;
     transform: translate3d(0,0,0);
     min-width: 20rem;
     min-height: 35rem;
+    
 }
 
 .wave {
@@ -148,3 +149,7 @@ body {
     color: white;
     animation: pulse 2s infinite ease-in-out;
 }
+
+
+
+ 
